@@ -4,7 +4,7 @@ syncronization of two folders with python
 
 DESCRIPTION :
 -------------------------
-- syncronization of two folders, from the source folder into the replica folder !
+- syncronization of two folders, from the source folder to the replica folder !
 - periodically in certain time intervals !
 - logging the actions into a logfile and the console !
 - reading the required pathes as command line arguments !
