@@ -18,9 +18,8 @@ Notes:
 - BUG:  could be problems with SymLinks, esp. on non-posix platforms !? 2DO !
 - This is NOT the most performant way to synchronize folders, since the file-comparison is done here by their MD5-hash/size/timesamp, so based OS-filesystem, and not sector based (as rsync,...).
   So it means e.g. a minor change to a huge file triggers the copy of the WHOLE file to the replica folder, which is far from perfect. But for the simple tasks could be fine !?
-- Tested ONLY on my linux! so on other platforms/OSs is to be tested ! NOT done yet !
 - I know, regarding the formatting/beautifying of this module, it is not absolutely style-guide comform.
-  But I did it as a quick implementaion in my vim/linux. So you are welcome to reformat/beautify it in your favorite IDE !
+  But I did it as a quick implementaion with my vim/linux. So you are welcome to reformat/beautify it in your favorite IDE !
   (e.g. the line lenght or one.liner-if-statements in one line, instead two! But so I can see more lines in my vim!
   of course for bigger modules using IDE and keeping to PEP 8 , ... !)
 - 2DO: also QA not done yet: so no mypy, pylint, pytype, pyre, pydantic, pytest, unittest routines yet ; for now no time, later on in August ...

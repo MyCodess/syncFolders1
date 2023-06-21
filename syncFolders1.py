@@ -70,7 +70,7 @@ def cmdline_argsParser1() ->  argparse.ArgumentParser:
     return args1
 ##======================================================================================
 
-##============================R command line Arguments checking : ======================
+##============================ command line Arguments checking : ======================
 def check_args(args1:  argparse.ArgumentParser) -> bool:
     """
     - verifying the command line Arguments
