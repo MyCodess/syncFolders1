@@ -5,8 +5,8 @@ syncronization of two folders with python
 DESCRIPTION :
 -------------------------
 - syncronization of two folders, from the source folder to the replica folder !
-- periodically in certain time intervals !
-- logging the actions into a logfile and the console !
+- periodically running in certain time intervals !
+- logging the actions into a logfile and to the console !
 - reading the required pathes as command line arguments !
 - NOT using any external Libs ... ! ONLY standard python packages !
 - requires python > 3.9
@@ -16,8 +16,8 @@ Notes:
 --------------------------
 - 2DO:  more exception handlings, soft exits on errors, test routines, more modularizations , SymLinks improvements ! QA routines ! Testing on other OS/platforms !
 - BUG:  could be problems with SymLinks, esp. on non-posix platforms !? 2DO !
-- This is NOT the most performant way to synchronize folders, since the file-comparison is done here by their MD5-hash/size/timesamp, so based OS-filesystem, and not sector based (as rsync,...).
-  So it means e.g. a minor change to a huge file triggers the copy of the WHOLE file to the replica folder, which is far from perfect. But for the simple tasks could be fine !?
+- This is NOT the most performant way to synchronize folders, since the file-comparison is done here by their MD5-hash/size/timesamp, so based on OS-filesystem and not sector based (as rsync,...).
+  So it means e.g. a minor change to a huge file triggers the copy of the WHOLE file to the replica folder, which is far from performant. But for the simple tasks or smaller files could be fine !?
 - I know, regarding the formatting/beautifying of this module, it is not absolutely style-guide comform.
   But I did it as a quick implementaion with my vim/linux. So you are welcome to reformat/beautify it in your favorite IDE !
   (e.g. the line lenght or one.liner-if-statements in one line, instead two! But so I can see more lines in my vim!
