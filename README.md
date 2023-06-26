@@ -1,11 +1,10 @@
 
-===================================================
 Syncronization of two folders with python
 ===================================================
 
 DESCRIPTION :
 -------------------------
-- syncronization of two folders, from the source folder to the replica folder !
+- Syncronization of two folders: from the source folder to the replica folder !
 - periodically running in certain time intervals !
 - logging the actions into a logfile and to the console !
 - reading the required pathes as command line arguments !
