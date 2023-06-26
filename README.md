@@ -1,5 +1,5 @@
 
-Syncronization of two folders with python
+Syncronization of two folders with python:
 ===================================================
 
 DESCRIPTION :
